@@ -1,7 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 :root {
   --red: #ea5454;
   --cyan: #44d3d2;
   --yellow: #fcae4a;
   --blue: #549ef2;
   --grayish-blue: #4d4f62;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--grayish-blue);
+  background-color: #fafafa;
+}
+
+header {
+  max-width: 311px;
+  margin: 85px auto 76px;
+}
+
+h1,
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+header p {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  gap: 23px;
+  justify-content: center;
+}
+
+.card {
+  max-width: 311px;
+  height: 222px;
+  padding: 28px;
+  background-color: #fff;
+  position: relative;
+
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.color {
+  height: 5px;
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.supervisor .color {
+  background-color: var(--cyan);
+}
+
+.team-builder .color {
+  background-color: var(--red);
+}
+
+.karma .color {
+  background-color: var(--yellow);
+}
+
+.calculator .color {
+  background-color: var(--blue);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 23px;
+  opacity: 0.5;
+}
+
+img {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
 }

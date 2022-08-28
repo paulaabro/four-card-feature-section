@@ -17,6 +17,7 @@ body {
 header {
   max-width: 311px;
   margin: 85px auto 76px;
+  text-align: center;
 }
 
 h1,
@@ -37,7 +38,7 @@ h2 {
 header p {
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
+  opacity: 0.5;
 }
 
 .cards {
@@ -59,7 +60,7 @@ header p {
 }
 
 .color {
-  height: 5px;
+  height: 4px;
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
   position: absolute;
   top: 0;
@@ -97,6 +98,47 @@ h3 {
 
 img {
   position: absolute;
-  right: 32px;
-  bottom: 32px;
+  right: 28px;
+  bottom: 28px;
+}
+
+@media (min-width: 1110px) {
+  header {
+    max-width: 540px;
+    margin: 80px auto 67px;
+  }
+
+  h1,
+  h2 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 350px);
+    grid-template-areas:
+      "start . end"
+      "start . end";
+    gap: 30px;
+  }
+
+  .card {
+    max-width: 350px;
+    height: 250px;
+    padding: 32px;
+  }
+
+  .supervisor {
+    grid-area: start;
+    align-self: center;
+  }
+
+  .calculator {
+    grid-area: end;
+    align-self: center;
+  }
+  . img {
+    right: 32px;
+    bottom: 32px;
+  }
 }
